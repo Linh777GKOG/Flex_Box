@@ -79,13 +79,17 @@ body {
 
 .sidebar-one {
   flex: 1;
+  order: 2;
+  /* order sắp xếp vị trí theo main axis */
 }
 
 .sidebar-two {
-  flex: 1;
+  flex: 3;
+  order: 2;
 }
 
 .main-column {
+  order: 1;
   flex: 3;
 }
 
@@ -93,6 +97,7 @@ body {
 .feature-layout {
   margin-top: 36px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   /* space-evenly bằng nhau ở cả hai bên  */
   /* around khác between ở điểm không có khoảng trống ở hai bên */
@@ -101,6 +106,7 @@ body {
 /* PC, Tablet */
 @media (min-width: 740px) {
   .feature-layout {
+    flex-direction: row;
   }
 }
 
@@ -201,22 +207,30 @@ body {
   padding: 32px 0;
   max-width: 740px;
   min-height: 360px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .the-end__first {
   padding: 4px 16px;
   background-color: #fff;
+  flex: 1;
 }
 
 .the-end__second {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .the-end__second-one {
+  flex: 1;
   padding: 4px 16px;
   background-color: rgb(227, 192, 214);
 }
 
 .the-end__second-two {
+  flex: 1;
   padding: 4px 16px;
   background-color: rgb(192, 210, 227);
 }
