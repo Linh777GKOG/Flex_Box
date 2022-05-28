@@ -18,11 +18,17 @@ body {
 .nav {
   min-height: 42px;
   background-color: #ef5122;
+  display: flex;
+  /* display: flex => flex-direction=row=ngang => Main axis nam ngang => flex item nam theo trục main axis => 2 thẻ ul nằm ngang */
+  justify-content: space-between;
+  /* space-between đẩy item cách xa nhau ra*/
+  /* mặc định justify-content là nằm bên trái */
 }
 
 .nav-list {
   padding-left: 0;
   margin: auto 16px;
+  /* dùng margin tạo khoảng trống đẹp mắt*/
 }
 
 .nav-item {
