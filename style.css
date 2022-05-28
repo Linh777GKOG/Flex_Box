@@ -68,19 +68,25 @@ body {
   margin-top: 36px;
   padding: 12px 0;
   background-color: #fff;
+  display: flex;
+  /* display:flex => main axis nằm ngang => flex items nằm ngang */
 }
 
 .column-item {
   padding: 0 16px;
+  /* flex: 1 => cả 3 item có chiều ngang bằng nhau */
 }
 
 .sidebar-one {
+  flex: 1;
 }
 
 .sidebar-two {
+  flex: 1;
 }
 
 .main-column {
+  flex: 3;
 }
 
 /* Feature layout */
