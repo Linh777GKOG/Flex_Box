@@ -153,6 +153,8 @@ body {
   padding: 32px 0;
   max-width: 640px;
   height: 360px;
+  display: flex;
+  margin: auto;
 }
 
 .center-layout__item {
