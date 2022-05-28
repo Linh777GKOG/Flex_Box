@@ -48,12 +48,19 @@ body {
 
 .form__row {
   padding: 8px 0;
+  display: flex;
+  /* display: flex => trục main axis nằm ngang */
+  /* inline-flex dùng layout flex trên cùng một hàng cho các layout */
 }
 
 .form__label {
+  min-width: 90px;
+  /* min-width: chiều dài tối thiểu */
 }
 
 .form__input {
+  flex: 1;
+  /* Trong layout flex có nhiều item, mà có một ông flex bằng 1 hoặc giá trị lớn hơn 1, thì ông đó ông ý sẽ chiếm hết khoảng không gian có thể chiếm được, theo chiều của trục main axis */
 }
 
 /* Column layout */
