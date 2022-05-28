@@ -92,6 +92,10 @@ body {
 /* Feature layout */
 .feature-layout {
   margin-top: 36px;
+  display: flex;
+  justify-content: space-around;
+  /* space-evenly bằng nhau ở cả hai bên  */
+  /* around khác between ở điểm không có khoảng trống ở hai bên */
 }
 
 /* PC, Tablet */
@@ -103,6 +107,8 @@ body {
 .feature-item {
   padding: 12px 16px;
   margin-top: 16px;
+  flex-basis: 30%;
+  /* flex-basis xét kích thước chiều main size */
 }
 
 .feature-item:nth-child(1) {
